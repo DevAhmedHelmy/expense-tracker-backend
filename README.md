@@ -18,6 +18,7 @@ Data is stored **in-memory** (no database), making it ideal for learning.
 ## 🚀 Features
 
 - `GET /expenses` – Fetch all expenses  
+- - `GET /expenses/category=?` – Filter expenses by category  
 - `POST /expenses` – Add a new expense  
 - `DELETE /expenses/:id` – Remove an expense  
 - Full input validation (title, amount, category, date)  
