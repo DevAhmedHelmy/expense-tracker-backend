@@ -47,8 +47,7 @@ function deleteExpense(req, res) {
   }
 
   res.status(STATUS.OK).json({
-    message: "Expense deleted",
-    deleted
+    message: "Expense deleted successfully"
   });
 }
 
@@ -82,5 +81,6 @@ module.exports = {
   getExpenses,
   createExpense,
   deleteExpense,
-  getHighestExpense
+  getHighestExpense,
+  getExpenseById
 };

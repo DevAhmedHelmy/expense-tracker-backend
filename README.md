@@ -126,6 +126,32 @@ Delete an expense by ID.
 
 ```json
 {
+    "id": "exp-123",
+    "title": "Groceries",
+    "amount": 150,
+    "category": "food",
+    "date": "2025-11-23"
+}
+```
+
+**Not found (404):**
+
+```json
+{
+  "status": 404,
+  "message": "Expense not found"
+}
+```
+---
+
+### 4️⃣ GET /expenses/:id  
+
+Get an expense by ID.
+
+**Success:**
+
+```json
+{
   "message": "Expense deleted successfully"
 }
 ```
@@ -138,7 +164,6 @@ Delete an expense by ID.
   "message": "Expense not found"
 }
 ```
-
 ---
 
 ## ▶️ How to Run the Backend
@@ -186,5 +211,6 @@ Frontend should call:
 - `GET http://localhost:3000/expenses`
 - `POST http://localhost:3000/expenses`
 - `DELETE http://localhost:3000/expenses/:id`
+- `GET http://localhost:3000/expenses/:id`
 
  
