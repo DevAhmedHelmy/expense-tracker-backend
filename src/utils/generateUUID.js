@@ -2,9 +2,7 @@ const crypto = require("crypto");
 
 function generateUUID(title = null) {
   const timestamp = Date.now().toString();
-
   let baseString = (title) ? `${title}-${timestamp}-${Math.random()}` : `${timestamp}-${Math.random()}`;
-
   // Hash to fixed-length unique ID
   const uuid = crypto
     .createHash("sha256")
