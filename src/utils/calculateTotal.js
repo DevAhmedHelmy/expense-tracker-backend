@@ -9,5 +9,4 @@ function calculateTotal(expenses) {
 
   return sum;
 }
-
 module.exports = calculateTotal;
